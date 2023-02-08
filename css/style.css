@@ -35,7 +35,7 @@ body{
 
 #bottomNav{
   position: fixed;
-  background-color: yellow;
+  background-color: black;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -64,12 +64,17 @@ body{
 }
 
 #mainContent{
+  width: 100%;
+}
+
+#mainContentContainer{
   top: 128px;
   bottom: 0px;
   position: absolute;
   left: 0;
   color: white;
   overflow: scroll;
+  width: 100%;
 }
 
 #title{
@@ -92,3 +97,99 @@ body{
   z-index: 2;
 }
 
+
+.dateBar{
+  background-color: white;
+  color: black;
+  height: 64px;
+  border-top: 1px solid yellow;
+  border-bottom: 1px solid yellow;
+}
+
+.mainContentBlock{
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.mainContentTextL{
+  font-size: 30px;
+  text-align: center;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.sideImages{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.sideImages > img{
+  max-width: 80%;
+  width: 320px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 30px;
+  border: 2px solid white;
+}
+
+.mainContentBlock.yellow{
+  background-color: yellow;
+  color: #000;;
+}
+
+.mainContentBlock.white{
+  background-color: white;
+  color: #000;;
+}
+
+.mainContentBlock > video{
+  max-width: 80%;
+  width: 320px;
+  border: 2px solid white;
+}
+
+.sideScroll{
+  width: 100%;
+  overflow: hidden;
+}
+
+.sideScrollContainer{
+display: grid;
+height: 200px;
+overflow-y: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  grid-auto-flow: column;
+  max-width: 100%;
+}
+
+.sideScrollEl{
+  scroll-snap-align: center;
+  object-fit: contain;
+  max-width: none;
+  margin-left: 100px;
+  margin-right: 100px;
+  width: 200px;
+}
+
+.previousEditionLabel{
+  font-size: 30px;
+  display: inline;
+}
+
+.previousEditionContent{
+  border-top: 2px solid black;
+}
+
+.borderTopBlack{
+  border-top: 2px solid black;
+}
