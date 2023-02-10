@@ -40,6 +40,8 @@ a {
 body {
   background-color: black;
   overscroll-behavior-x: contain;
+  overscroll-behavior-y: none;
+  overflow: hidden;
   font-family: 'Metal Reg-1';
 }
 
