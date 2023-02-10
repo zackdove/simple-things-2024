@@ -519,10 +519,14 @@ line-height: 0.75em;
 
 .carouselImg {
   width: 100vw;
+  max-height: calc(100vh - 220px);
+  object-fit: cover;
 }
 
 .photoGlider{
   background-color: black;
+  /* height: calc(100vh - 128px);
+  object-fit: contain; */
 }
 
 .photoGlider .glide__bullet {
@@ -680,4 +684,8 @@ line-height: 0.75em;
 
 #highlights{
   margin-top: 50px;
+}
+
+.topMargin{
+  margin-top: 32px;
 }
