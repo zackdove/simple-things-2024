@@ -41,6 +41,7 @@
 
 
     <div id="titleContainer">
+      <video src="assets/videos/sand1.mp4" muted autoplay loop"></video>
       <div id="title">
         <div>SIMPLE</div>
         <div>THINGS</div>
@@ -51,8 +52,10 @@
     <div id="mainContent">
       <div class="dateMarquee">
         <div class="marqueeContainer">
-          <span class="marqueeContent">25.10.2024 • BRISTOL •&nbsp;</span>
-          <span class="marqueeContent">25.10.2024 • BRISTOL •&nbsp;</span>
+          <span class="marqueeContent">25.10.2024 • BRISTOL • 25.10.2024 • BRISTOL • 25.10.2024 • BRISTOL • 25.10.2024 •
+            BRISTOL • 25.10.2024 • BRISTOL •&nbsp;</span>
+          <span class="marqueeContent">25.10.2024 • BRISTOL • 25.10.2024 • BRISTOL • 25.10.2024 • BRISTOL • 25.10.2024 •
+            BRISTOL • 25.10.2024 • BRISTOL •&nbsp;</span>
         </div>
       </div>
       <div class="mainContentBlock">
@@ -60,19 +63,21 @@
           AN INTRODUCTION INTO THE RETURN OF THE FESTIVAL CAN GO HERE, EXPLAINS WE ARE BACK AND WHAT TO EXPECT. AN
           INTRODUCTION INTO THE RETURN OF THE FESTIVAL CAN GO HERE, EXPLAINS WE ARE BACK AND WHAT TO EXPECT.
         </div>
-        <div class="mainContentTextM price">
-          £000
-        </div>
-        <div class="mainContentTextM">
-          EARLY BIRD / PRESALE
-        </div>
-        <div class="mainContentTextM">
-          MORE INFORMATION TO GO HERE
-        </div>
-        <div class="ticketButtonContainer">
-          <a href="https://simplethingsfestival.co.uk/">
-            <span class="simpleButton">BUY NOW</span>
-          </a>
+        <div id="topTicketInfo">
+          <div class="mainContentTextM price">
+            £000
+          </div>
+          <div class="mainContentTextM">
+            EARLY BIRD / PRESALE
+          </div>
+          <div class="mainContentTextM">
+            MORE INFORMATION TO GO HERE
+          </div>
+          <div class="ticketButtonContainer">
+            <a href="https://simplethingsfestival.co.uk/">
+              <span class="simpleButton">BUY NOW</span>
+            </a>
+          </div>
         </div>
         <div class="sideImages">
           <img src="assets/images/2019-poster.jpeg" />
@@ -119,7 +124,7 @@
         </div>
       </div>
       <div class="mainContentBlock white borderTopBlack">
-        <div class="mainContentTextL">
+        <div class="previousEditionsTitle">
           PREVIOUS EDITIONS
         </div>
         <div class="previousEditionsContainer">
@@ -127,17 +132,26 @@
 
 
 
-            <svg id="overlayTop" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="58 0 370 676.07">
+            <svg id="overlayTop" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="58 40 370 28">
               <defs>
                 <style>
                   .cls-1 {
                     fill: #fff;
                     stroke: #000;
                     stroke-miterlimit: 10;
-                    stroke-width: 2px;
+                    stroke-width: 0.5%;
+                    cursor: pointer;
+                  }
+
+                  @media only screen and (min-width: 600px) {
+                    .cls-1 {
+                      < !-- stroke-width: 0.75px;
+                      -->
+                    }
                   }
 
                   .title {
+                    cursor: pointer;
                     font-size: 20px;
                     text-anchor: middle;
                     fill: #000;
@@ -150,19 +164,19 @@
               <text x="383" y="63" class="title" onclick="setActivePreviousEdition(2015)" id="title2015">2015</text>
               <path data-name="Path 7" class="cls-1"
                 d="M413.53,67.32H355.41c-4.91-3.39-6.08-21.84-21.86-21.84H280c-7.7,0-13.94,4.37-17.37,17.76v4.08H54.59V630.59h375V67.32Z"
-                onclick="setActivePreviousEdition(2016)"  id="tab2016"/>
+                onclick="setActivePreviousEdition(2016)" id="tab2016" />
               <text x="308" y="63" class="title" onclick="setActivePreviousEdition(2016)" id="title2016">2016</text>
-              <path  data-name="Path 8" class="cls-1"
+              <path data-name="Path 8" class="cls-1"
                 d="M413.53,67.32H283.38c-4.91-3.39-6.08-21.84-21.85-21.84H208c-7.7,0-14,4.37-17.38,17.76v4.08h-136V630.59h375V67.32Z"
-                onclick="setActivePreviousEdition(2017)"  id="tab2017"/>
+                onclick="setActivePreviousEdition(2017)" id="tab2017" />
               <text x="235" y="63" class="title" onclick="setActivePreviousEdition(2017)" id="title2017">2017</text>
-              <path  data-name="Path 9" class="cls-1"
+              <path data-name="Path 9" class="cls-1"
                 d="M413.53,67.32H213.63c-4.9-3.39-6.07-21.84-21.84-21.84H138.28c-7.7,0-14,4.37-17.38,17.76v4.08H54.59V630.59h375V67.32Z"
-                onclick="setActivePreviousEdition(2018)"  id="tab2018"/>
+                onclick="setActivePreviousEdition(2018)" id="tab2018" />
               <text x="164" y="63" class="title" onclick="setActivePreviousEdition(2018)" id="title2018">2018</text>
-              <path  data-name="Path 372" class="cls-1"
+              <path data-name="Path 372" class="cls-1"
                 d="M431.76,67.6h-289c-5-3.39-6.15-21.83-22.11-21.83H52.42V630.31H431.76Z"
-                onclick="setActivePreviousEdition(2019)"  id="tab2019"/>
+                onclick="setActivePreviousEdition(2019)" id="tab2019" />
               <text x="90" y="63" class="title" onclick="setActivePreviousEdition(2019)" id="title2019">2019</text>
 
 
@@ -174,24 +188,56 @@
           <div class=" previousEditions">
 
             <div class="previousEdition" id="2015">
-              2015 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis quam impedit facilis?
-              Cupiditate, repellendus deserunt natus mollitia sequi facere eius impedit assumenda est eos quos
-              molestias voluptatum distinctio hic aut.
+              <img class="previousEditionPoster" src="assets/images/2019-poster.jpeg" />
+              <div class="previousEditionContent">
+                <div class="previousEditionStats">
+                  <div>DATE: 13.10.2015</div>
+                  <div>VISITORS: 000</div>
+                  <div>ARTISTS: 666</div>
+                </div>
+                <div>HIGHLIGHTS:</div>
+                <div>Small writeup about 2015 can go here</div>
+                <div>Watch the highlights <a href="https://simplethingsfestival.co.uk/">here</a></div>
+              </div>
             </div>
             <div class="previousEdition" id="2016">
-              2016 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis quam impedit facilis?
-              Cupiditate, repellendus deserunt natus mollitia sequi facere eius impedit assumenda est eos quos
-              molestias voluptatum distinctio hic aut.
+              <img class="previousEditionPoster" src="assets/images/2019-poster.jpeg" />
+              <div class="previousEditionContent">
+                <div class="previousEditionStats">
+                  <div>DATE: 13.10.2016</div>
+                  <div>VISITORS: 000</div>
+                  <div>ARTISTS: 666</div>
+                </div>
+                <div>HIGHLIGHTS:</div>
+                <div>Small writeup about 2016 can go here</div>
+                <div>Watch the highlights <a href="https://simplethingsfestival.co.uk/">here</a></div>
+              </div>
             </div>
             <div class="previousEdition" id="2017">
-              2017 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis quam impedit facilis?
-              Cupiditate, repellendus deserunt natus mollitia sequi facere eius impedit assumenda est eos quos
-              molestias voluptatum distinctio hic aut.
+              <img class="previousEditionPoster" src="assets/images/2019-poster.jpeg" />
+              <div class="previousEditionContent">
+                <div class="previousEditionStats">
+                  <div>DATE: 13.10.2017</div>
+                  <div>VISITORS: 000</div>
+                  <div>ARTISTS: 666</div>
+                </div>
+                <div>HIGHLIGHTS:</div>
+                <div>Small writeup about 2017 can go here</div>
+                <div>Watch the highlights <a href="https://simplethingsfestival.co.uk/">here</a></div>
+              </div>
             </div>
             <div class="previousEdition" id="2018">
-              2018 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis quam impedit facilis?
-              Cupiditate, repellendus deserunt natus mollitia sequi facere eius impedit assumenda est eos quos
-              molestias voluptatum distinctio hic aut.
+              <img class="previousEditionPoster" src="assets/images/2019-poster.jpeg" />
+              <div class="previousEditionContent">
+                <div class="previousEditionStats">
+                  <div>DATE: 13.10.2018</div>
+                  <div>VISITORS: 000</div>
+                  <div>ARTISTS: 666</div>
+                </div>
+                <div>HIGHLIGHTS:</div>
+                <div>Small writeup about 2018 can go here</div>
+                <div>Watch the highlights <a href="https://simplethingsfestival.co.uk/">here</a></div>
+              </div>
             </div>
             <div class="previousEdition" id="2019">
               <img class="previousEditionPoster" src="assets/images/2019-poster.jpeg" />
@@ -208,7 +254,40 @@
 
             </div>
           </div>
-
+        </div>
+      </div>
+      <div class="mainContentBlock">
+        <div class="mainContentBlock" id="bottomTicketInfo">
+          <div class="mainContentBlockText">
+            <div class="mainContentTextM">
+              TICKET INFO:
+            </div>
+            <div class="mainContentTextM price">
+              £000
+            </div>
+          </div>
+          <div class="mainContentBlockText">
+            <div class="mainContentTextM">
+              EARLY BIRD / PRESALE
+            </div>
+            <div class="mainContentTextM">
+              MORE INFORMATION TO GO HERE MORE INFORMATION TO GO HERE MORE INFORMATION TO GO HERE MORE INFORMATION TO GO
+              HERE MORE INFORMATION TO GO HERE
+            </div>
+            <div class="ticketButtonContainer">
+              <a href="https://simplethingsfestival.co.uk/">
+                <span class="simpleButton">BUY NOW</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="dateMarquee" id="prevPhotoGliderMarquee">
+          <div class="marqueeContainer">
+            <span class="marqueeContent">25.10.2024 • BRISTOL • 25.10.2024 • BRISTOL • 25.10.2024 • BRISTOL • 25.10.2024
+              • BRISTOL • 25.10.2024 • BRISTOL •&nbsp;</span>
+            <span class="marqueeContent">25.10.2024 • BRISTOL • 25.10.2024 • BRISTOL • 25.10.2024 • BRISTOL • 25.10.2024
+              • BRISTOL • 25.10.2024 • BRISTOL •&nbsp;</span>
+          </div>
         </div>
         <div class="gliderContainer photoGlider">
           <div class="glide">
@@ -225,40 +304,22 @@
               <button class="glide__bullet" data-glide-dir="=2"></button>
             </div>
           </div>
-
         </div>
       </div>
-      <div class="dateMarquee">
+
+      <div class="dateMarquee" id="postPhotoGliderMarquee">
         <div class="marqueeContainer">
-          <span class="marqueeContent">25.10.2024 • BRISTOL •&nbsp;</span>
-          <span class="marqueeContent">25.10.2024 • BRISTOL •&nbsp;</span>
+          <span class="marqueeContent">25.10.2024 • BRISTOL • 25.10.2024 • BRISTOL • 25.10.2024 • BRISTOL • 25.10.2024 •
+            BRISTOL • 25.10.2024 • BRISTOL •&nbsp;</span>
+          <span class="marqueeContent">25.10.2024 • BRISTOL • 25.10.2024 • BRISTOL • 25.10.2024 • BRISTOL • 25.10.2024 •
+            BRISTOL • 25.10.2024 • BRISTOL •&nbsp;</span>
         </div>
       </div>
 
 
 
 
-      <div class="mainContentBlock">
-        <div class="mainContentBlockText ticketInfoSecond">
-          <div class="mainContentTextM">
-            TICKET INFO:
-          </div>
-          <div class="mainContentTextM price">
-            £000
-          </div>
-          <div class="mainContentTextM">
-            EARLY BIRD / PRESALE
-          </div>
-          <div class="mainContentTextM">
-            MORE INFORMATION TO GO HERE
-          </div>
-          <div>
-            <a href="https://simplethingsfestival.co.uk/">
-              <span class="ticketButton">BUY NOW</span>
-            </a>
-          </div>
-        </div>
-      </div>
+
 
       <div class="mainContentBlock">
         <div class="mainContentBlockText">
@@ -345,8 +406,12 @@
   <div id="topBanner">
     <div id="topMarquee">
       <div class="marqueeContainer">
-        <span>BUY TICKETS <span class="outline">25.10.2024</span>&nbsp;</span>
-        <span>BUY TICKETS <span class="outline">25.10.2024</span>&nbsp;</span>
+        <span>BUY TICKETS <span class="outline">25.10.2024</span> BUY TICKETS <span class="outline">25.10.2024</span>
+          BUY TICKETS <span class="outline">25.10.2024</span> BUY TICKETS <span class="outline">25.10.2024</span>
+          BUY TICKETS <span class="outline">25.10.2024</span>&nbsp;</span>
+        <span>BUY TICKETS <span class="outline">25.10.2024</span> BUY TICKETS <span class="outline">25.10.2024</span>
+          BUY TICKETS <span class="outline">25.10.2024</span> BUY TICKETS <span class="outline">25.10.2024</span>
+          BUY TICKETS <span class="outline">25.10.2024</span>&nbsp;</span>
       </div>
     </div>
     <div id="topNav">
