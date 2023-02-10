@@ -55,7 +55,7 @@ body {
 }
 
 #topMarquee {
-  background-color: yellow;
+  background-color: #e2ff00;
   height: 64px;
   font-size: 37px;
   overflow: hidden;
@@ -185,8 +185,8 @@ line-height: 0.75em;
   background-color: white;
   color: black;
   height: 64px;
-  border-top: 1px solid yellow;
-  border-bottom: 1px solid yellow;
+  border-top: 1px solid #e2ff00;
+  border-bottom: 1px solid #e2ff00;
 }
 
 .mainContentBlock {
@@ -253,7 +253,7 @@ line-height: 0.75em;
 }
 
 .mainContentBlock.yellow {
-  background-color: yellow;
+  background-color: #e2ff00;
   color: #000;
   ;
 }
@@ -421,7 +421,7 @@ line-height: 0.75em;
 }
 
 .price {
-  color: yellow;
+  color: #e2ff00;
   margin-bottom: 32px;
   font-size: 74px;
 }
@@ -454,8 +454,8 @@ line-height: 0.75em;
   text-stroke: 1px black;
   white-space: nowrap;
   background-color: white;
-  border-top: 2px solid yellow;
-  border-bottom: 2px solid yellow;
+  border-top: 2px solid #e2ff00;
+  border-bottom: 2px solid #e2ff00;
 }
 
 #mailerContainer {
@@ -466,8 +466,8 @@ line-height: 0.75em;
 
 #mailerTitle {
   height: 37px;
-  border-top: 2px solid yellow;
-  border-bottom: 1px solid yellow;
+  border-top: 2px solid #e2ff00;
+  border-bottom: 1px solid #e2ff00;
   padding-left: 12px;
 }
 
@@ -488,8 +488,8 @@ line-height: 0.75em;
 }
 
 #emailForm {
-  border-top: 1px solid yellow;
-  border-bottom: 2px solid yellow;
+  border-top: 1px solid #e2ff00;
+  border-bottom: 2px solid #e2ff00;
 }
 
 #submitEmail {
@@ -524,12 +524,12 @@ line-height: 0.75em;
 }
 
 .photoGlider .glide__bullet {
-  background-color: yellow;
+  background-color: #e2ff00;
   opacity: 1;
 }
 
 .photoGlider .glide__bullet--active {
-  background-color: yellow;
+  background-color: #e2ff00;
   opacity: 0.5;
 }
 
