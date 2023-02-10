@@ -22,6 +22,10 @@ const photoGlider = new Glide('.photoGlider>.glide', {
   autoplay: 5000,
 }).mount()
 
+var scrollAmount = 0;
+
+
+
 
 const dateMarqueeContainers = document.querySelectorAll('.marqueeContainer');
 let start, previousTimeStamp;
@@ -40,17 +44,17 @@ class LoopingText {
     this.el.style.cssText = `position: relative; display: inline-flex; white-space: nowrap;`;
     this.el.children[1].style.cssText = `position: absolute; left: ${100 * -this.direction}%;`;
     // this.events();
-    this.render();
+    // this.render();
   }
 
   events() {
-    document.getElementById('mainContentContainer').addEventListener("scroll", () => { 
+    document.getElementById('mainContentContainer').addEventListener("scroll", () => {
       console.log('hi')
-      this.lerp.target += this.speed * 2 
+      this.lerp.target += this.speed * 2
     });
   }
 
-  animate() {
+  update() {
     this.lerp.target += this.speed;
     this.lerp.current = lerp(this.lerp.current, this.lerp.target, this.interpolationFactor);
 
@@ -69,7 +73,24 @@ class LoopingText {
   }
 }
 
-document.querySelectorAll(".marqueeContainer").forEach(el => new LoopingText(el));
+const updatables = []
+
+function render() {
+  window.requestAnimationFrame(render)
+  for (let i = 0; i < updatables.length; i++) {
+    updatables[i].update()
+  }
+}
+render()
+
+
+
+
+document.querySelectorAll(".marqueeContainer").forEach(el => {
+  updatables.push(new LoopingText(el))
+});
+
+
 
 const tabs = [
   document.getElementById('tab2019'),
@@ -122,14 +143,33 @@ function setActivePreviousEdition(year) {
 
 }
 
-function closeMailer(){
+function closeMailer() {
   console.log('close mailer')
 
-  const mailerContainer  =  document.getElementById('mailerContainer')
+  const mailerContainer = document.getElementById('mailerContainer')
   mailerContainer.classList.add('hide')
-  setTimeout( ( ) => {
+  setTimeout(() => {
     mailerContainer.remove()
   }, 2000)
 }
 
 document.querySelector('#titleContainer>video').loop = true;
+
+const mainContentContainer = document.getElementById('mainContentContainer')
+
+
+const sideImagesEl = document.querySelector('.sideImages')
+const sideImages = sideImagesEl.children
+
+for (let i = 0; i < sideImages.length; i++) {
+  sideImages[i].style.zIndex = sideImages.length-i;
+}
+
+mainContentContainer.addEventListener("scroll", (event) => {
+  for (let i = 0; i < sideImages.length; i++) {
+    // console.log(sideImages[i])
+    // console.log( )
+    const d = 2 * (mainContentContainer.scrollTop - sideImages[i].offsetTop) - (i * (sideImages[i].clientWidth + 24)) + 800;
+    sideImages[i].style.transform = `translateX(${Math.min(d, 0)}px)`
+  }
+});

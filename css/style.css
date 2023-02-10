@@ -238,7 +238,7 @@ line-height: 0.75em;
   align-items: center;
   justify-content: center;
   width: 100%;
-
+  overflow: hidden;
   flex-wrap: nowrap;
   display: none;
   padding-left: 10px;
@@ -254,7 +254,7 @@ line-height: 0.75em;
   height: 40vw;
   object-fit: cover;
   margin-bottom: 32px;
-
+  box-sizing: border-box;
   margin-left: 10px;
   margin-right: 10px;
   /* margin-top: 30px; */
