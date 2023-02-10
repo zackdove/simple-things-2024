@@ -192,7 +192,6 @@ line-height: 0.75em;
 }
 
 .mainContentBlock {
-  padding-top: 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -509,7 +508,7 @@ line-height: 0.75em;
 
 .ticketButtonContainer {
   margin-top: 32px;
-  margin-bottom: 32px;
+  margin-bottom: 64px;
 }
 
 .gliderContainer {
@@ -677,4 +676,8 @@ line-height: 0.75em;
     display: none;
   }
 
+}
+
+#highlights{
+  margin-top: 50px;
 }
