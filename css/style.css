@@ -66,6 +66,15 @@ body {
   white-space: nowrap;
   width: 100%;
 }
+/* 
+#topMarquee>.marqueeContainer>span{
+  padding-left: 16px;
+} */
+
+#topMarquee span span{
+  padding-right: 16px;
+  padding-left: 16px;
+}
 
 #topMarquee .outline {
   color: transparent;
@@ -117,7 +126,7 @@ body {
 #bottomNav {
 
   background-color: black;
-
+  position: relative;
 
 
   height: 37px;
@@ -171,6 +180,7 @@ line-height: 0.75em;
   align-items: center;
   justify-content: center;
   position: absolute;
+  text-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
 
 #titleContainer {
@@ -212,7 +222,7 @@ line-height: 0.75em;
 
 @media only screen and (min-width: 600px) {
   .mainContentTextL {
-    font-size: 40px;
+    font-size: 46px;
   }
   #title {
     font-size: 110px;
@@ -228,6 +238,7 @@ line-height: 0.75em;
   align-items: center;
   justify-content: center;
   width: 100%;
+
   flex-wrap: nowrap;
   display: none;
   padding-left: 10px;
@@ -240,6 +251,10 @@ line-height: 0.75em;
 .sideImages>img {
   /* max-width: 80%; */
   width: 30%;
+  height: 40vw;
+  object-fit: cover;
+  margin-bottom: 32px;
+
   margin-left: 10px;
   margin-right: 10px;
   /* margin-top: 30px; */
@@ -315,6 +330,7 @@ line-height: 0.75em;
 .previousEditionContent {
   display: none;
   border-left: 3px solid black;
+  margin-top: -2px;
 }
 
 #bottomTicketInfo {
@@ -330,8 +346,8 @@ line-height: 0.75em;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 72px;
+    padding-bottom: 64px;
   }
 
   #bottomTicketInfo .mainContentTextM{
@@ -370,6 +386,7 @@ line-height: 0.75em;
 .previousEditions {
   position: relative;
   display: grid;
+  z-index: 1;
 }
 
 .previousEditionPoster {
@@ -377,6 +394,7 @@ line-height: 0.75em;
   margin-left: 5vw;
   margin-bottom: 16px;
   padding-top: 32px;
+  min-height: 200px;
 }
 
 .previousEditionContent {
@@ -446,8 +464,8 @@ line-height: 0.75em;
 }
 
 .dateMarquee {
-  font-size: 55px;
-  height: 100px;
+  font-size: 40px;
+  height: 60px;
   overflow: hidden;
   font-family: "Metal Reg-2";
   color: transparent;
@@ -463,6 +481,11 @@ line-height: 0.75em;
   background-color: white;
   color: black;
   font-size: 24px;
+  transition: transform 1s;
+}
+
+#mailerContainer.hide{
+  transform: translateY(200px);
 }
 
 #mailerTitle {
@@ -472,16 +495,28 @@ line-height: 0.75em;
   padding-left: 12px;
 }
 
+#mailerClose{
+  background-color: transparent;
+  position: absolute;
+  top: 0px;
+  font-family: inherit;
+  right: 18px;
+  border: none;
+  font-size: inherit;
+  cursor: pointer;
+}
+
 #emailAddress {
   height: 37px;
   margin: none;
   box-sizing: border-box;
   border: none;
-  width: calc(100vw - 44px);
+  width: calc(100vw - 64px);
   font-family: "Metal Reg-1";
   font-size: 24px;
-  color: lightgray;
+  color: rgb(107, 107, 107);
   padding-left: 12px;
+  padding-bottom: 8px;
 }
 
 #emailAddress::placeholder {
@@ -495,7 +530,7 @@ line-height: 0.75em;
 
 #submitEmail {
   float: right;
-  color: lightgray;
+  color: rgb(107, 107, 107);
   background-color: transparent;
   border: none;
   font-size: 24px;
@@ -560,12 +595,18 @@ line-height: 0.75em;
   position: relative;
 }
 
+
 .marqueeContainer {
   position: absolute;
   width: max-content;
   white-space: nowrap;
   will-change: transform;
 }
+
+.dateMarquee>.marqueeContainer {
+  top: -4px;
+}
+
 
 .quotesContainer {
   width: 100vw;
@@ -592,6 +633,15 @@ line-height: 0.75em;
     padding-right: 32px;
   }
 
+  /* Remove this if we add more quotes */
+  .quotesContainer{
+    pointer-events: none;
+  }
+
+  .quotesContainer .glide__bullet {
+    display: none;
+  }
+
 
 
 }
@@ -616,6 +666,15 @@ line-height: 0.75em;
 
 .previousEdition.active {
   z-index: 99;
+}
+
+.previousEdition img{
+  display: none;
+}
+
+
+.previousEdition.active img {
+  display: block;
 }
 
 #overlayTop>path.active {
@@ -659,7 +718,7 @@ line-height: 0.75em;
     display: none;
   }
   .previousEditionsTitle {
-    font-size: 64px;
+    font-size: 46px;
   }
 
   .previousEdition{
@@ -679,6 +738,12 @@ line-height: 0.75em;
   #postPhotoGliderMarquee{
     display: none;
   }
+  .simpleButton {
+    font-size: 38px;
+    padding-bottom: 18px;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
 
 }
 
@@ -688,4 +753,8 @@ line-height: 0.75em;
 
 .topMargin{
   margin-top: 32px;
+}
+
+.center{
+  text-align: center;
 }
