@@ -37,7 +37,7 @@ class LoopingText {
     // Init
     this.el.style.cssText = `position: relative; display: inline-flex; white-space: nowrap;`;
     this.el.children[1].style.cssText = `position: absolute; left: ${100 * -this.direction}%;`;
-    this.events();
+    // this.events();
     this.render();
   }
 
