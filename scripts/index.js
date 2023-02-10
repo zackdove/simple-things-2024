@@ -48,3 +48,38 @@ class LoopingText {
 }
 
 document.querySelectorAll(".marqueeContainer").forEach(el => new LoopingText(el));
+
+function setActivePreviousEdition(year){
+  console.log(year)
+  const overlayTop = document.getElementById('overlayTop')
+
+  const previousEditions = document.querySelectorAll('.previousEditions>div');
+  console.log(previousEditions)
+  for (let i = 0; i < previousEditions.length; i++){
+    previousEditions[i].classList.remove('active');
+  }
+  const target = document.getElementById(year.toString());
+  target.classList.add('active')
+  console.log(target)
+
+  const previousTabs = document.querySelectorAll('.overlayTop>path');
+  for (let i = 0; i < previousTabs.length; i++){
+    previousTabs[i].classList.remove('active');
+  }
+  const targetTab = document.getElementById('tab'+year.toString());
+  overlayTop.appendChild(targetTab)
+  
+  console.log('tab'+year.toString())
+  targetTab.classList.add('active');
+
+  const previousTitles = document.querySelectorAll('.overlayTop>text');
+  for (let i = 0; i < previousTitles.length; i++){
+    previousTitles[i].classList.remove('active');
+  }
+  const targetTitle = document.getElementById('title'+year.toString());
+  targetTitle.classList.add('active');
+  overlayTop.appendChild(targetTitle)
+
+  
+
+}

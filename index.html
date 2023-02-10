@@ -51,9 +51,9 @@
     <div id="mainContent">
       <div class="dateMarquee">
         <div class="marqueeContainer">
-        <span class="marqueeContent">25.10.2024 • BRISTOL •&nbsp;</span>
-        <span class="marqueeContent">25.10.2024 • BRISTOL •&nbsp;</span>
-      </div>
+          <span class="marqueeContent">25.10.2024 • BRISTOL •&nbsp;</span>
+          <span class="marqueeContent">25.10.2024 • BRISTOL •&nbsp;</span>
+        </div>
       </div>
       <div class="mainContentBlock">
         <div class="mainContentTextL">
@@ -89,21 +89,31 @@
         <div class="simpleButton black">
           PRESS
         </div>
-        <div class="sideScrollContainer">
-          <div class="sideScrollEl">
-            <div class="sideScrollElQuote">
-              "MASTERFULLY CURATED AND DELIVERED"
+        <div class="quotesContainer">
+          <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                  <div class="quote">
+                    "MASTERFULLY CURATED AND DELIVERED"
+                  </div>
+                  <div class="quoteSource">
+                    - THE GUARDIAN
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="quote">
+                    "SIMPLE THINGS IS MARKING ITSELF OUT AS THE UK'S ANSWER TO SÓNAR OR UNSOUND"
+                  </div>
+                  <div class="quoteSource">
+                    - MIXMAG
+                  </div>
+                </li>
+              </ul>
             </div>
-            <div class="sideScrollElSource">
-              - THE GUARDIAN
-            </div>
-          </div>
-          <div class="sideScrollEl">
-            <div class="sideScrollElQuote">
-              "SIMPLE THINGS IS MARKING ITSELF OUT AS THE UK'S ANSWER TO SÓNAR OR UNSOUND"
-            </div>
-            <div class="sideScrollElSource">
-              - MIXMAG
+            <div class="glide__bullets" data-glide-el="controls[nav]">
+              <button class="glide__bullet" data-glide-dir="=0"></button>
+              <button class="glide__bullet" data-glide-dir="=1"></button>
             </div>
           </div>
         </div>
@@ -114,66 +124,89 @@
         </div>
         <div class="previousEditionsContainer">
           <div class="previousEditionLabels">
-            <svg id="overlayTop" version=" 1.1" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="xMaxYMid meet" overflow="hidden">
-              <path d="M -10 20 H 0 H 75 c 2.5 0 2.5 -10 10 -10  H 200 V 200" stroke="#000000" stroke-width="0.5"
-                fill="rgba(255,255,255,1)" />
-              <text x="90" y="18" font-size="6" text-anchor="middle" fill="#000000"">2015</text>
 
-            <path d=" M -10 20 H 0 H 55 c 2.5 0 2.5 -10 10 -10 h 10 c 7.5 0 7.5 10 10 10 H 200 V 200" stroke="#000000"
-                stroke-width="0.5" fill="rgba(255,255,255,1)" />
-              <text x="70" y="18" font-size="6" text-anchor="middle" fill="#000000"">2016</text>
 
-            <path d=" M -10 20 H 0 H 35 c 2.5 0 2.5 -10 10 -10 h 10 c 7.5 0 7.5 10 10 10 H 200 V 200" stroke="#000000"
-                stroke-width="0.5" fill="rgba(255,255,255,1)" />
-              <text x="50" y="18" font-size="6" text-anchor="middle" fill="#000000"">2017</text>
 
-            <path d=" M -10 20 H 0 H 15 c 2.5 0 2.5 -10 10 -10 h 10 c 7.5 0 7.5 10 10 10 H 200 V 200" stroke="#000000"
-                stroke-width="0.5" fill="rgba(255,255,255,1)" />
-              <text x="30" y="18" font-size="6" text-anchor="middle" fill="#000000"">2018</text>
-            
+            <svg id="overlayTop" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="58 0 370 676.07">
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #fff;
+                    stroke: #000;
+                    stroke-miterlimit: 10;
+                    stroke-width: 2px;
+                  }
 
-            <path d=" M -10 10 H 0 H 15 c 7.5 0 7.5 10 10 10 H 200 V 200" stroke="#000000" stroke-width="0.5"
-                fill="rgba(255,255,255,1)" />
-              <text x="8" y="18" font-size="6" text-anchor="middle" fill="#000000"">2019</text>
+                  .title {
+                    font-size: 20px;
+                    text-anchor: middle;
+                    fill: #000;
+                  }
+                </style>
+              </defs>
+              <path data-name="Path 6" class="cls-1"
+                d="M54.59,67.32H340.28c4.91-3.39,6.08-21.84,21.86-21.84h67.45V630.59h-375Z"
+                onclick="setActivePreviousEdition(2015)" id="tab2015" />
+              <text x="383" y="63" class="title" onclick="setActivePreviousEdition(2015)" id="title2015">2015</text>
+              <path data-name="Path 7" class="cls-1"
+                d="M413.53,67.32H355.41c-4.91-3.39-6.08-21.84-21.86-21.84H280c-7.7,0-13.94,4.37-17.37,17.76v4.08H54.59V630.59h375V67.32Z"
+                onclick="setActivePreviousEdition(2016)"  id="tab2016"/>
+              <text x="308" y="63" class="title" onclick="setActivePreviousEdition(2016)" id="title2016">2016</text>
+              <path  data-name="Path 8" class="cls-1"
+                d="M413.53,67.32H283.38c-4.91-3.39-6.08-21.84-21.85-21.84H208c-7.7,0-14,4.37-17.38,17.76v4.08h-136V630.59h375V67.32Z"
+                onclick="setActivePreviousEdition(2017)"  id="tab2017"/>
+              <text x="235" y="63" class="title" onclick="setActivePreviousEdition(2017)" id="title2017">2017</text>
+              <path  data-name="Path 9" class="cls-1"
+                d="M413.53,67.32H213.63c-4.9-3.39-6.07-21.84-21.84-21.84H138.28c-7.7,0-14,4.37-17.38,17.76v4.08H54.59V630.59h375V67.32Z"
+                onclick="setActivePreviousEdition(2018)"  id="tab2018"/>
+              <text x="164" y="63" class="title" onclick="setActivePreviousEdition(2018)" id="title2018">2018</text>
+              <path  data-name="Path 372" class="cls-1"
+                d="M431.76,67.6h-289c-5-3.39-6.15-21.83-22.11-21.83H52.42V630.31H431.76Z"
+                onclick="setActivePreviousEdition(2019)"  id="tab2019"/>
+              <text x="90" y="63" class="title" onclick="setActivePreviousEdition(2019)" id="title2019">2019</text>
+
+
+
+
+
             </svg>
           </div>
           <div class=" previousEditions">
 
-                <div class="previousEdition" id="2015">
-                  2015 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis quam impedit facilis?
-                  Cupiditate, repellendus deserunt natus mollitia sequi facere eius impedit assumenda est eos quos
-                  molestias voluptatum distinctio hic aut.
+            <div class="previousEdition" id="2015">
+              2015 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis quam impedit facilis?
+              Cupiditate, repellendus deserunt natus mollitia sequi facere eius impedit assumenda est eos quos
+              molestias voluptatum distinctio hic aut.
+            </div>
+            <div class="previousEdition" id="2016">
+              2016 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis quam impedit facilis?
+              Cupiditate, repellendus deserunt natus mollitia sequi facere eius impedit assumenda est eos quos
+              molestias voluptatum distinctio hic aut.
+            </div>
+            <div class="previousEdition" id="2017">
+              2017 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis quam impedit facilis?
+              Cupiditate, repellendus deserunt natus mollitia sequi facere eius impedit assumenda est eos quos
+              molestias voluptatum distinctio hic aut.
+            </div>
+            <div class="previousEdition" id="2018">
+              2018 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis quam impedit facilis?
+              Cupiditate, repellendus deserunt natus mollitia sequi facere eius impedit assumenda est eos quos
+              molestias voluptatum distinctio hic aut.
+            </div>
+            <div class="previousEdition" id="2019">
+              <img class="previousEditionPoster" src="assets/images/2019-poster.jpeg" />
+              <div class="previousEditionContent">
+                <div class="previousEditionStats">
+                  <div>DATE: 13.10.2019</div>
+                  <div>VISITORS: 000</div>
+                  <div>ARTISTS: 666</div>
                 </div>
-                <div class="previousEdition" id="2016">
-                  2016 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis quam impedit facilis?
-                  Cupiditate, repellendus deserunt natus mollitia sequi facere eius impedit assumenda est eos quos
-                  molestias voluptatum distinctio hic aut.
-                </div>
-                <div class="previousEdition" id="2017">
-                  2017 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis quam impedit facilis?
-                  Cupiditate, repellendus deserunt natus mollitia sequi facere eius impedit assumenda est eos quos
-                  molestias voluptatum distinctio hic aut.
-                </div>
-                <div class="previousEdition" id="2018">
-                  2018 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis quam impedit facilis?
-                  Cupiditate, repellendus deserunt natus mollitia sequi facere eius impedit assumenda est eos quos
-                  molestias voluptatum distinctio hic aut.
-                </div>
-                <div class="previousEdition" id="2019">
-                  <img class="previousEditionPoster" src="assets/images/2019-poster.jpeg" />
-                  <div class="previousEditionContent">
-                    <div class="previousEditionStats">
-                      <div>DATE: 13.10.2019</div>
-                      <div>VISITORS: 000</div>
-                      <div>ARTISTS: 666</div>
-                    </div>
-                    <div>HIGHLIGHTS:</div>
-                    <div>Small writeup about 2019 can go here</div>
-                    <div>Watch the highlights <a href="https://simplethingsfestival.co.uk/">here</a></div>
-                  </div>
+                <div>HIGHLIGHTS:</div>
+                <div>Small writeup about 2019 can go here</div>
+                <div>Watch the highlights <a href="https://simplethingsfestival.co.uk/">here</a></div>
+              </div>
 
-                </div>
+            </div>
           </div>
 
         </div>
@@ -197,9 +230,9 @@
       </div>
       <div class="dateMarquee">
         <div class="marqueeContainer">
-        <span class="marqueeContent">25.10.2024 • BRISTOL •&nbsp;</span>
-        <span class="marqueeContent">25.10.2024 • BRISTOL •&nbsp;</span>
-      </div>
+          <span class="marqueeContent">25.10.2024 • BRISTOL •&nbsp;</span>
+          <span class="marqueeContent">25.10.2024 • BRISTOL •&nbsp;</span>
+        </div>
       </div>
 
 
@@ -233,29 +266,37 @@
             A FESTIVAL BY CRACK MAGAZNE AND TEAM LOVE
           </div>
           <div class="sponsorLogos">
-            <svg class="sponsorLogo" overflow="hidden" version="1.1" id="Layer_1" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"  viewBox="0 0 725.443 160.162" enable-background="new 0 0 725.443 160.162" xml:space="preserve">
+            <svg class="sponsorLogo" overflow="hidden" version="1.1" id="Layer_1" fill="#ffffff"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 725.443 160.162" enable-background="new 0 0 725.443 160.162" xml:space="preserve">
               <polygon stroke-miterlimit="10" points="446.154,0 423.644,22.132 423.644,138.379 
               445.278,160.162 508.961,160.162 530.592,138.354 530.592,86.407 482.721,86.548 482.721,117.474 473.154,117.467 473.154,42.641 
               482.721,42.646 482.721,74.661 530.592,74.661 530.592,21.747 508.783,0 "></polygon>
               <polygon stroke-miterlimit="10" points="81.706,0 59.196,22.132 59.196,138.379 80.83,160.162 
               144.512,160.162 166.145,138.354 166.145,86.407 118.271,86.548 118.271,117.474 108.706,117.467 108.706,42.641 118.271,42.646 
               118.271,74.661 166.145,74.661 166.145,21.747 144.336,0 "></polygon>
-              <path stroke-miterlimit="10" d="M223.471,74.708V42.982l11.453,0.038v31.727L223.471,74.708z
+              <path stroke-miterlimit="10"
+                d="M223.471,74.708V42.982l11.453,0.038v31.727L223.471,74.708z
               M174.896,0v160.162h49.117v-59.267h9.707v59.267h51.091V95.854l-10.123-9.758l10.646-10.46V24.222L260.558,0H174.896z"></path>
               <g>
                 <path stroke-miterlimit="10" d="M382.594-0.065C385.364,11.674,423,160.162,423,160.162h-44.937
                 l-5.912-23.745h-28.688l-6.036,23.745l-45.068-0.069L333.007-0.065H382.594z M357.835,79.573l-5.573,21.242l10.875-0.061
                 L357.835,79.573z"></path>
               </g>
-              <polygon stroke-miterlimit="10" points="608.66,-0.065 587.104,42.646 587.104,0 538.807,0 
+              <polygon stroke-miterlimit="10"
+                points="608.66,-0.065 587.104,42.646 587.104,0 538.807,0 
               538.807,160.162 587.104,160.162 587.104,117.474 607.808,160.162 666.169,160.162 620.174,80.724 666.776,-0.065 "></polygon>
             </svg>
-            <svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 365.304 184.319" enable-background="new 0 0 365.304 184.319" xml:space="preserve" class="sponsorLogo">
-              <path fill="#FF4045" d="M237.929,0l-55.277,26.409L127.375,0L0,22.103v77.274c0,11.073,8.973,23.24,20.044,27.187l162.29,57.535
+            <svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 365.304 184.319" enable-background="new 0 0 365.304 184.319" xml:space="preserve"
+              class="sponsorLogo">
+              <path fill="#FF4045"
+                d="M237.929,0l-55.277,26.409L127.375,0L0,22.103v77.274c0,11.073,8.973,23.24,20.044,27.187l162.29,57.535
                 v0.221l0.317-0.105l0.313,0.105v-0.221l162.29-57.535c11.072-3.947,20.049-16.114,20.049-27.187V22.103L237.929,0"></path>
               <path fill="#FFFFFF" d="M73.55,86.808c0,0.552,0,1.1,0,1.593c0,5.204-0.373,7.471-2.759,7.471c-1.838,0-2.202-1.044-2.202-3.617
                 V75.786h8.082v-4.227h-7.96V60.174h-3.917c-0.497,7.163-2.696,10.713-8.39,11.635v3.977h4.775v15.613
-                c0,6.856,2.208,10.106,7.589,10.106c6.309,0,8.818-3.733,8.818-12.067c0-0.793,0-1.714-0.06-2.63H73.55"></path>
+                c0,6.856,2.208,10.106,7.589,10.106c6.309,0,8.818-3.733,8.818-12.067c0-0.793,0-1.714-0.06-2.63H73.55">
+              </path>
               <path fill="#FFFFFF" d="M95.653,70.461c-9.31,0-15.311,6.303-15.311,15.55c0,9.367,5.879,15.55,15.311,15.55
                 c7.47,0,12.607-4.344,13.469-11.445h-5.144c-0.98,4.712-3.184,6.548-7.898,6.548c-4.534,0-7.162-3.428-7.407-10.038h20.632
                 C109.305,76.03,104.466,70.461,95.653,70.461 M88.977,82.278c0.737-5.146,3.064-7.713,6.614-7.713c3.553,0,5.268,2.444,5.632,7.713
@@ -273,7 +314,8 @@
                 c0-4.779,3.245-8.021,6.792-8.021c3.555,0,4.168,1.897,4.168,5.936v11.394c0,2.816-0.431,3.672-3.553,3.672h-0.672v4.103h16.717
                 v-4.103h-1.717C189.91,96.361,189.535,95.505,189.535,92.689 M123.447,96.419c-2.449,0-3.794-1.286-3.794-3.486
                 c0-3.861,3.854-4.592,10.286-7.593v3.488C129.939,93.728,127.304,96.419,123.447,96.419z"></path>
-              <path fill="#FFFFFF" d="M215.41,92.688v-33.31h-12.861v4.102h1.836c3.119,0,3.55,0.856,3.55,3.674v25.534
+              <path fill="#FFFFFF"
+                d="M215.41,92.688v-33.31h-12.861v4.102h1.836c3.119,0,3.55,0.856,3.55,3.674v25.534
                 c0,2.817-0.431,3.672-3.55,3.672h-1.836v4.103h18.25V96.36h-1.838C215.832,96.36,215.41,95.505,215.41,92.688"></path>
               <path fill="#FFFFFF" d="M235.482,70.458c-9.908,0-16.283,6.246-16.283,15.55c0,9.312,6.375,15.492,16.283,15.492
                 c9.922,0,16.355-6.18,16.355-15.492C251.837,76.704,245.404,70.458,235.482,70.458 M235.482,97.153
@@ -291,7 +333,7 @@
                 c-0.435-0.801-1.222-1.518-2.271-1.675c-1.485-0.227-2.945,0.535-3.269,2.103c-0.353,1.717,0.53,3.415,2.427,4.81
                 c1.414,1.04,2.717,2.079,3.08,3.281l0.012,0.14c0.006-0.017,0.01-0.037,0.01-0.057c0.011,0.02,0.017,0.04,0.017,0.057l0.007-0.14
                 c0.364-1.202,1.664-2.238,3.082-3.275C314.999,67.448,315.874,65.751,315.527,64.03"></path>
-              </svg>
+            </svg>
           </div>
         </div>
       </div>
@@ -303,8 +345,8 @@
   <div id="topBanner">
     <div id="topMarquee">
       <div class="marqueeContainer">
-      <span>BUY TICKETS <span class="outline">25.10.2024</span>&nbsp;</span>
-      <span>BUY TICKETS <span class="outline">25.10.2024</span>&nbsp;</span>
+        <span>BUY TICKETS <span class="outline">25.10.2024</span>&nbsp;</span>
+        <span>BUY TICKETS <span class="outline">25.10.2024</span>&nbsp;</span>
       </div>
     </div>
     <div id="topNav">

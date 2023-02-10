@@ -496,3 +496,45 @@ overflow-y: auto;
   white-space: nowrap;
   will-change: transform;
 }
+
+.quotesContainer{
+  width: 100vw;
+  text-align: center;
+}
+
+.quote{
+  font-size: 38px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.quoteSource{
+  font-size: 24px;
+  padding-bottom: 64px;
+}
+
+
+.quotesContainer .glide__bullet{
+  background-color: black;
+}
+
+
+.quotesContainer .glide__bullet--active{
+  background-color: black;
+  opacity: 0.5;
+}
+
+.previousEdition.active{
+  z-index: 99;
+}
+
+#overlayTop>path.active{
+  z-index: 99;
+  position: relative;
+}
+
+
+#overlayTop>text.active{
+  z-index: 99;
+  position: relative;
+}
