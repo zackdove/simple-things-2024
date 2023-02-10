@@ -45,6 +45,10 @@ body {
   left: 0;
 }
 
+#topBanner a {
+  text-decoration: none;
+}
+
 #topMarquee {
   background-color: yellow;
   height: 64px;
@@ -85,9 +89,14 @@ body {
   top: 14px;
 }
 
-#navContent>span {
+#navContent>a {
   padding-left: 12px;
   padding-right: 12px;
+  text-decoration: none;
+}
+
+#navContent>a:hover {
+  opacity: 0.5;
 }
 
 #footer {

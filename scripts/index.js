@@ -44,7 +44,7 @@ class LoopingText {
   events() {
     document.getElementById('mainContentContainer').addEventListener("scroll", () => { 
       console.log('hi')
-      this.lerp.target += this.speed * 5 
+      this.lerp.target += this.speed * 2 
     });
   }
 
