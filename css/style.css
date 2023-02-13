@@ -159,12 +159,13 @@ body {
 }
 
 #mainContentContainer {
-  top: 128px;
+  top: 130px;
   bottom: 0px;
   position: absolute;
   left: 0;
   color: white;
   overflow: scroll;
+  overflow-x: hidden;
   width: 100%;
   overscroll-behavior-x: contain;
 }
@@ -283,9 +284,12 @@ line-height: 0.75em;
 .mainContentBlock>video {
   max-width: 80%;
   width: 320px;
+  height: 404px;
   border: 2px solid white;
   margin-bottom: 32px;
+  object-fit: cover
 }
+
 
 .sideScroll {
   width: 100%;
@@ -443,6 +447,7 @@ line-height: 0.75em;
   color: #e2ff00;
   margin-bottom: 32px;
   font-size: 74px;
+  line-height: 0.8em;
 }
 
 .simpleButton {
@@ -455,12 +460,17 @@ line-height: 0.75em;
   padding-bottom: 11px;
   margin-top: 12px;
   margin-bottom: 36px;
-
+white-space: nowrap;
 }
 
 .simpleButton.black {
   background-color: black;
   color: white;
+}
+
+.simpleButton.yellow {
+  background-color: yellow;
+  color: black;
 }
 
 .dateMarquee {
@@ -701,7 +711,8 @@ line-height: 0.75em;
 }
 
 #topTicketInfo {
-  width: 100%;
+  padding-left: 32px;
+  padding-right: 32px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -709,8 +720,20 @@ line-height: 0.75em;
   text-align: center;
 }
 
+#topTicketInfo > .price{
+  padding-bottom: 32px;
+}
+
 #prevPhotoGliderMarquee{
   display: none;
+}
+
+#titleButton{
+  position: absolute;
+  bottom: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -744,6 +767,10 @@ line-height: 0.75em;
     padding-left: 22px;
     padding-right: 22px;
   }
+  #titleButton{
+    font-size: 30px;
+    bottom: 10px;
+  }
 
 }
 
@@ -758,3 +785,4 @@ line-height: 0.75em;
 .center{
   text-align: center;
 }
+
