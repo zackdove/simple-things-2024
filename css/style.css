@@ -66,12 +66,13 @@ body {
   white-space: nowrap;
   width: 100%;
 }
+
 /* 
 #topMarquee>.marqueeContainer>span{
   padding-left: 16px;
 } */
 
-#topMarquee span span{
+#topMarquee span span {
   padding-right: 16px;
   padding-left: 16px;
 }
@@ -176,13 +177,13 @@ body {
   width: 100%;
   font-family: "Metal Reg-2";
   font-size: 55px;
-line-height: 0.75em;
+  line-height: 0.75em;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: absolute;
-  text-shadow: 0 0 5px rgba(0,0,0,0.5);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 #titleContainer {
@@ -226,6 +227,7 @@ line-height: 0.75em;
   .mainContentTextL {
     font-size: 46px;
   }
+
   #title {
     font-size: 110px;
   }
@@ -355,7 +357,7 @@ line-height: 0.75em;
     padding-bottom: 64px;
   }
 
-  #bottomTicketInfo .mainContentTextM{
+  #bottomTicketInfo .mainContentTextM {
     max-width: 400px;
   }
 
@@ -462,7 +464,8 @@ line-height: 0.75em;
   padding-bottom: 11px;
   margin-top: 12px;
   margin-bottom: 36px;
-white-space: nowrap;
+  white-space: nowrap;
+  width: fit-content;
 }
 
 .simpleButton.black {
@@ -496,7 +499,7 @@ white-space: nowrap;
   transition: transform 1s;
 }
 
-#mailerContainer.hide{
+#mailerContainer.hide {
   transform: translateY(200px);
 }
 
@@ -507,7 +510,7 @@ white-space: nowrap;
   padding-left: 12px;
 }
 
-#mailerClose{
+#mailerClose {
   background-color: transparent;
   position: absolute;
   top: 0px;
@@ -570,7 +573,7 @@ white-space: nowrap;
   object-fit: cover;
 }
 
-.photoGlider{
+.photoGlider {
   background-color: black;
   /* height: calc(100vh - 128px);
   object-fit: contain; */
@@ -646,7 +649,7 @@ white-space: nowrap;
   }
 
   /* Remove this if we add more quotes */
-  .quotesContainer{
+  .quotesContainer {
     pointer-events: none;
   }
 
@@ -680,7 +683,7 @@ white-space: nowrap;
   z-index: 99;
 }
 
-.previousEdition img{
+.previousEdition img {
   display: none;
 }
 
@@ -722,15 +725,15 @@ white-space: nowrap;
   text-align: center;
 }
 
-#topTicketInfo > .price{
+#topTicketInfo>.price {
   padding-bottom: 32px;
 }
 
-#prevPhotoGliderMarquee{
+#prevPhotoGliderMarquee {
   display: none;
 }
 
-#titleButton{
+#titleButton {
   position: absolute;
   bottom: 120px;
   left: 50%;
@@ -742,53 +745,106 @@ white-space: nowrap;
   #topTicketInfo {
     display: none;
   }
+
   .previousEditionsTitle {
     font-size: 46px;
   }
 
-  .previousEdition{
+  .previousEdition {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
   }
-  .previousEditionPoster{
+
+  .previousEditionPoster {
     width: 40vw;
     margin-left: 32px;
     margin-right: 32px;
-    
+
   }
-  #prevPhotoGliderMarquee{
+
+  #prevPhotoGliderMarquee {
     display: block;
   }
-  #postPhotoGliderMarquee{
+
+  #postPhotoGliderMarquee {
     display: none;
   }
+
   .simpleButton {
     font-size: 38px;
     padding-bottom: 18px;
     padding-left: 22px;
     padding-right: 22px;
   }
-  #titleButton{
+
+  #titleButton {
     font-size: 30px;
     bottom: 10px;
   }
 
 }
 
-#highlights{
+#highlights {
   margin-top: 50px;
 }
 
-.topMargin{
+.topMargin {
   margin-top: 32px;
 }
 
-.center{
+.center {
   text-align: center;
 }
 
 
-.hidden{
+.hidden {
   display: none;
+}
+
+#showsGrid {
+  background-color: white;
+  width: 100%;
+  border-top: 1px solid white;
+}
+.showContainer{
+  background-color: black;
+  border-bottom: 1px solid white;
+}
+.showTextL{
+  font-size: 32px;
+  margin-bottom: 28px;
+}
+.showTextM{
+  margin-bottom: 16px;
+}
+.showContent{
+  line-height: 0.9em;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-top: 1px solid white;
+}
+.showContent .simpleButton{
+  margin-top: 28px;
+}
+.showContent a{
+  text-decoration: none;
+}
+
+.showContainer> img{
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  #showsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+  }
+  .showContent .simpleButton{
+    font-size: 30px;
+    padding-bottom: 14px;
+  }
 }
