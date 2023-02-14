@@ -837,11 +837,20 @@ body {
   width: 100%;
 }
 
+.showsTitle{
+  font-size: 30px;
+  padding-top: 32px;
+  padding-bottom: 40px;
+}
+
 @media only screen and (min-width: 600px) {
   #showsGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1px;
+  }
+  .showsTitle{
+    font-size: 46px;
   }
   .showContent .simpleButton{
     font-size: 30px;
