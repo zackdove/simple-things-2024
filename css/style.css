@@ -103,6 +103,7 @@ body {
   font-size: 20px;
   position: relative;
   top: 14px;
+  right: 16px;
 }
 
 #navContent>a {
@@ -138,7 +139,7 @@ body {
   height: 37px;
   width: 25%;
   float: left;
-  padding-top: 7px;
+  padding-top: 9px;
   box-sizing: border-box;
   border-left: 1px solid white;
   text-align: center;
@@ -150,12 +151,12 @@ body {
 
 #bottomNav span img {
 
-  height: 23px;
+  height: 16px;
 }
 
 #mainContent {
   width: 100%;
-  padding-bottom: 120px;
+  padding-bottom: 48px;
 }
 
 #mainContentContainer {
@@ -734,7 +735,7 @@ white-space: nowrap;
   bottom: 120px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 24px;
+  font-size: 20px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -787,3 +788,7 @@ white-space: nowrap;
   text-align: center;
 }
 
+
+.hidden{
+  display: none;
+}
