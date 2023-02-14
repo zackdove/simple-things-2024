@@ -803,14 +803,15 @@ body {
 }
 
 #showsGrid {
-  background-color: white;
+  background-color: black;
   width: 100%;
-  border-top: 1px solid white;
+  border-bottom: 1px solid white;
 }
 
 .showContainer {
   background-color: black;
-  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+ 
 }
 
 .showTextL {
@@ -823,7 +824,7 @@ body {
 }
 
 .showContent {
-  line-height: 0.9em;
+  line-height: 0.9;
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 16px;
@@ -860,7 +861,9 @@ body {
   #showsGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1px;
+  }
+  .showContainer:nth-child(2n+1){
+    border-right: 1px solid white;
   }
 
   .showsTitle {
