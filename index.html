@@ -847,39 +847,63 @@
           </svg>
           <div id="menuContent">
             <div>
-              <div><a href="#">Artists</a></div>
+              <div><a href="javascript:scrollToLineup()">Artists</a></div>
               <div><a href="#">Venues</a></div>
               <div><a href="#">Information</a></div>
               <div><a href="#">FAQs</a></div>
               <div><a href="#">Sponsors</a></div>
-              <div><a href="#">Newsletter</a></div>
+              <div>
+                <a
+                  href="https://crackmagazine.typeform.com/simplethings24"
+                  target="_blank"
+                  >Newsletter</a
+                >
+              </div>
             </div>
             <div>
               <div><a href="#">Tickets</a></div>
             </div>
             <div>
               <div><a href="#">ST Presents</a></div>
-              <div><a href="#">Contact</a></div>
-              <div><a href="#">Privacy</a></div>
+              <div>
+                <a href="https://teamlove.org/#contact" target="_blank"
+                  >Contact</a
+                >
+              </div>
+              <div>
+                <a href="https://teamlove.org/privacy-policy/" target="_blank"
+                  >Privacy</a
+                >
+              </div>
             </div>
             <div class="smallerMenu">
               <div><a href="#">Presents</a></div>
-              <div><a href="#">Sign Up</a></div>
+              <div>
+                <a
+                  href="https://crackmagazine.typeform.com/simplethings24"
+                  target="_blank"
+                  >Sign Up</a
+                >
+              </div>
               <div><a href="#">FAQ</a></div>
-              <div><a href="#">Contact</a></div>
+              <div>
+                <a href="https://teamlove.org/#contact" target="_blank"
+                  >Contact</a
+                >
+              </div>
             </div>
             <div class="menuLogoLinks">
               <div>
                 <a href="https://teamlove.org/" target="_blank">
                   <img
-                    id="teamLove"
+                    id="menuTeamLove"
                     src="/zd24/simple-things-2024/assets/svg/teamlove_black.svg"
                 /></a>
               </div>
               <div>
                 <a href="https://crackmagazine.net/" target="_blank">
                   <img
-                    id="crackLogo"
+                    id="menuCrackLogo"
                     src="/zd24/simple-things-2024/assets/svg/crack_black.svg"
                   />
                 </a>
@@ -898,7 +922,7 @@
           loop
         ></video>
         <div id="headerContent">
-          <div>
+          <div id="destopHeaderIntro">
             <div>
               Simple Things Festival is back in early 2024. We’re marking the
               festival’s tenth edition with an all-day, all-night multi-venue
@@ -908,14 +932,34 @@
             <div class="largerText">
               <div>20-22 February</div>
               <div>Various Venues, Bristol UK</div>
-              <div><br />Tickets</div>
+              <div><br /><a href="#">Tickets</a></div>
+            </div>
+          </div>
+          <div id="mobileHeaderIntro">
+            <div>
+              <div>20-22 Feb 2024</div>
+              <div>Bristol UK</div>
+            </div>
+            <div class="mobilePluses">
+              <img src="/zd24/simple-things-2024/assets/svg/plus.svg" />
+              <img src="/zd24/simple-things-2024/assets/svg/plus.svg" />
+            </div>
+            <div>
+              <a href="#">Tickets</a>
             </div>
           </div>
         </div>
         <section id="content">
-          <div>
-            <div>Line up</div>
-            <div>A-Z</div>
+          <div id="lineup">
+            <div>
+              <span class="desktopOnly">Line up</span
+              ><span class="mobileOnly">Full lineup</span>
+            </div>
+            <div><span class="desktopOnly">A-Z</span></div>
+          </div>
+          <div class="mobileOnly mobilePluses">
+            <img src="/zd24/simple-things-2024/assets/svg/plus.svg" />
+            <img src="/zd24/simple-things-2024/assets/svg/plus.svg" />
           </div>
           <div>
             <div>Fever Ray</div>
@@ -951,7 +995,7 @@
               <div>Gazelle Twin</div>
               <div>Grove</div>
             </div>
-            <div>+ More TBA</div>
+            <div id="moreTBA">+ More TBA</div>
             <div class="smallerLineup">
               <div>
                 <div>Fat Dog</div>
@@ -991,10 +1035,20 @@
               </div>
             </div>
           </div>
-          <div><a href="#">Buy Tickets</a></div>
+          <div>
+            <div class="mobileOnly mobilePluses">
+              <img src="/zd24/simple-things-2024/assets/svg/plus.svg" />
+              <img src="/zd24/simple-things-2024/assets/svg/plus.svg" />
+            </div>
+            <a href="#">Buy Tickets</a>
+            <div class="mobileOnly mobilePluses">
+              <img src="/zd24/simple-things-2024/assets/svg/plus.svg" />
+              <img src="/zd24/simple-things-2024/assets/svg/plus.svg" />
+            </div>
+          </div>
 
-          <div><a href="#">Buy Tickets</a></div>
-          <div class="remainder">
+          <div class="desktopOnly"><a href="#">Buy Tickets</a></div>
+          <div class="remainder desktopOnly">
             <div>
               Simple Things Festival is back in early 2024. We’re marking the
               festival’s tenth edition with an all-day, all-night multi-venue
@@ -1020,26 +1074,50 @@
         ></video>
         <footer>
           <div id="newsletter">
-            <div class="largerText"><a href="#">Newsletter</a></div>
-            <div>Join our mailing list for festival updates.</div>
+            <div class="largerText">
+              <a
+                href="https://crackmagazine.typeform.com/simplethings24"
+                target="_blank"
+                >Newsletter</a
+              >
+            </div>
+            <div class="desktopOnly">
+              Join our mailing list for festival updates.
+            </div>
           </div>
           <div>
-            <div class="largerText"><a href="#">Enter email here</a></div>
+            <div class="largerText">
+              <a
+                href="https://crackmagazine.typeform.com/simplethings24"
+                target="_blank"
+                >Enter email <span class="desktopOnly">here</span></a
+              >
+            </div>
             <div class="smallerFooter">
               <div class="smallerFooterInner">
                 <div>
                   <div><a href="#">Home</a></div>
                   <div><a href="#">Tickets</a></div>
-                  <div><a href="#">Artists</a></div>
+                  <div><a href="javascript:scrollToLineup()">Artists</a></div>
                   <div><a href="#">Venues</a></div>
                   <div><a href="#">About</a></div>
                   <div><a href="#">Archive</a></div>
                 </div>
                 <div>
                   <div><a href="#">Presents</a></div>
-                  <div><a href="#">Sign Up</a></div>
+                  <div>
+                    <a
+                      href="https://crackmagazine.typeform.com/simplethings24"
+                      target="_blank"
+                      >Sign Up</a
+                    >
+                  </div>
                   <div><a href="#">FAQ</a></div>
-                  <div><a href="#">Contact</a></div>
+                  <div>
+                    <a href="https://teamlove.org/#contact" target="_blank"
+                      >Contact</a
+                    >
+                  </div>
                 </div>
               </div>
               <div class="smallerFooterInner2">

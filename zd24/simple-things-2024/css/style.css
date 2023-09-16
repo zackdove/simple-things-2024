@@ -8,6 +8,7 @@ body {
   margin: 0;
   color: white;
   font-family: "centschbook-mono-bt-regular";
+  scroll-behavior: smooth;
 }
 
 #headerLogos {
@@ -37,25 +38,17 @@ body {
   display: none;
 }
 
-@media screen and (min-width: 782px) {
-  #headerLogoMobile {
-    display: none;
-  }
-  #headerLogoDesktop {
-    display: block;
-  }
-}
-
 #lineup {
   display: grid;
   gap: 24px;
   grid-template-columns: repeat(4, 1fr);
   color: #fff;
-  font-family: CentSchbook Mono BT;
+
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
   line-height: 44px; /* 110% */
+  scroll-margin-top: 300px;
 }
 
 .w25 {
@@ -68,9 +61,16 @@ body {
   padding: 40px 23px 30px 23px;
 }
 
+#headerLogoMobile {
+  display: none;
+}
+#headerLogoDesktop {
+  display: block;
+}
+
 .smallerLineup {
   color: #fff;
-  font-family: CentSchbook Mono BT;
+
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -82,7 +82,7 @@ body {
 
 .smallerInfo {
   color: #fff;
-  font-family: CentSchbook Mono BT;
+
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -93,7 +93,7 @@ body {
 
 .smallerFooter {
   color: #fff;
-  font-family: CentSchbook Mono BT;
+
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -124,7 +124,7 @@ a:hover {
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
   color: #fff;
-  font-family: CentSchbook Mono BT;
+
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
@@ -141,6 +141,7 @@ a:hover {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
+  pointer-events: none;
 }
 
 footer {
@@ -200,9 +201,10 @@ footer > * > div:nth-child(1) {
   color: #fff;
   padding: 0 23px;
   row-gap: 100px;
+  pointer-events: none;
 }
 
-#headerContent > div:nth-child(1) {
+#destopHeaderIntro {
   grid-column-start: 2;
   grid-column-end: span 3;
   display: flex;
@@ -285,4 +287,126 @@ footer > * > div:nth-child(1) {
   cursor: pointer;
   pointer-events: all;
   z-index: 100;
+}
+#menuOpen svg {
+  width: 5vw;
+}
+
+#mobileHeaderIntro {
+  display: none;
+}
+
+.mobileOnly {
+  display: none;
+}
+
+@media screen and (max-width: 782px) {
+  .mobileOnly {
+    display: block;
+  }
+  .desktopOnly {
+    display: none;
+  }
+  body {
+    color: #fff;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 111.111% */
+  }
+  #destopHeaderIntro {
+    display: none;
+  }
+  #mobileHeaderIntro {
+    display: block;
+  }
+  #headerContent {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .mobilePluses {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    justify-content: space-between;
+    margin: 32px 0;
+  }
+  #content {
+    display: block;
+  }
+
+  #moreTBA {
+    margin: 24px 0;
+  }
+  footer {
+    display: block;
+  }
+  .smallerFooter {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 36px;
+    margin-top: 64px;
+  }
+  .smallerFooterInner2 {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+  #crackLogo {
+    width: 39px;
+    height: 10px;
+  }
+  #teamLove {
+    width: 37px;
+    height: 19px;
+  }
+  .smallerLineup {
+    font-size: 14px;
+    line-height: 18px; /* 128.571% */
+  }
+  footer > * > div:nth-child(1) {
+    margin-bottom: 0;
+  }
+  #menuOpen > svg {
+    width: 34px;
+  }
+  #menuOpen {
+    top: 11px;
+    right: 11px;
+  }
+  #headerLogoMobile {
+    display: block;
+    top: 11px;
+  }
+  #headerLogoDesktop {
+    display: none;
+  }
+  #menuClose {
+    top: 15px;
+    right: 20px;
+    width: 28px;
+    height: 28px;
+  }
+  #menu {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 111.111% */
+    padding: 15px 50px 15px 20px;
+  }
+  .smallerMenu {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+  }
+  #menuTeamLove {
+    width: 61px;
+    height: 33px;
+  }
+  #menuCrackLogo {
+    width: 81px;
+    height: 21px;
+  }
 }
