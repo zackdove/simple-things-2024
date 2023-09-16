@@ -1,0 +1,288 @@
+@font-face {
+  font-family: "centschbook-mono-bt-regular";
+  src: url(/zd24/simple-things-2024/assets/fonts/CenSchMo.ttf);
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  color: white;
+  font-family: "centschbook-mono-bt-regular";
+}
+
+#headerLogos {
+  /* Cant use position: fixed here, breaks mix-blend-mode */
+  mix-blend-mode: exclusion;
+}
+#test {
+  background-color: black;
+}
+
+#landingVideo {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.headerLogo {
+  position: fixed;
+  top: 2.5vw;
+  width: 95vw;
+  left: 2.5vw;
+  pointer-events: none;
+}
+
+#headerLogoDesktop {
+  display: none;
+}
+
+@media screen and (min-width: 782px) {
+  #headerLogoMobile {
+    display: none;
+  }
+  #headerLogoDesktop {
+    display: block;
+  }
+}
+
+#lineup {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(4, 1fr);
+  color: #fff;
+  font-family: CentSchbook Mono BT;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44px; /* 110% */
+}
+
+.w25 {
+  width: 20vw;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+#content {
+  padding: 40px 23px 30px 23px;
+}
+
+.smallerLineup {
+  color: #fff;
+  font-family: CentSchbook Mono BT;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 120% */
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.smallerInfo {
+  color: #fff;
+  font-family: CentSchbook Mono BT;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 120% */
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.smallerFooter {
+  color: #fff;
+  font-family: CentSchbook Mono BT;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 120% */
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.spreadColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  color: #fff;
+  font-family: CentSchbook Mono BT;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44px; /* 110% */
+  row-gap: 100px;
+}
+
+.remainder {
+  display: inline-block;
+  grid-column-end: span 2;
+}
+
+#footerVideo {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  padding: 115px 23px 75px 23px;
+  justify-content: space-between;
+}
+
+footer > div:nth-child(1) {
+  width: 300px;
+}
+
+footer > div:nth-child(2) {
+  flex-grow: 0.3;
+}
+
+footer > * > div:nth-child(1) {
+  margin-bottom: 64px;
+}
+
+.largerText {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44px; /* 110% */
+}
+
+#teamLove {
+  width: 114px;
+  height: 60px;
+}
+
+#crackLogo {
+  width: 129px;
+  height: 34px;
+}
+
+.smallerFooterInner {
+  gap: 54px;
+  display: flex;
+  flex-direction: row;
+}
+
+.smallerFooterInner2 {
+  gap: 54px;
+  display: flex;
+  flex-direction: row;
+}
+
+#headerContent {
+  position: absolute;
+  bottom: 64px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  color: #fff;
+  padding: 0 23px;
+  row-gap: 100px;
+}
+
+#headerContent > div:nth-child(1) {
+  grid-column-start: 2;
+  grid-column-end: span 3;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+#headerContent > div:nth-child(1) > div {
+  width: 40%;
+}
+#headerContent > div:nth-child(1) > div:nth-child(2) {
+  width: 100%;
+}
+
+#headerContent > div:nth-child(2) {
+  /* grid-column-end: span 2; */
+}
+
+#menu {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  min-height: 100vh;
+  background-color: #fff;
+  color: #000;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 66px; /* 110% */
+  padding: 29px 200px 29px 20px;
+  box-sizing: border-box;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s;
+}
+#menu.show {
+  opacity: 1;
+  pointer-events: all;
+}
+
+#menuClose {
+  position: absolute;
+  top: 29px;
+  right: 20px;
+  cursor: pointer;
+}
+
+#menuContent {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: fit-content;
+  column-gap: 84px;
+  row-gap: 32px;
+  justify-content: space-between;
+}
+
+.smallerMenu {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 125% */
+}
+
+.menuLogoLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+}
+
+#menuOpen {
+  position: fixed;
+  top: 29px;
+  right: 20px;
+  cursor: pointer;
+  pointer-events: all;
+  z-index: 100;
+}
