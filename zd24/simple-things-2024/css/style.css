@@ -410,3 +410,7 @@ footer > * > div:nth-child(1) {
     height: 21px;
   }
 }
+
+#headerContent a {
+  pointer-events: all;
+}
