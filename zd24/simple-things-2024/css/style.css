@@ -194,6 +194,7 @@ footer > * > div:nth-child(1) {
 
 #headerContent {
   position: absolute;
+  mix-blend-mode: exclusion;
   bottom: 64px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
