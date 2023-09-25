@@ -253,6 +253,7 @@ footer > * > div:nth-child(1) {
   position: absolute;
   top: 29px;
   right: 20px;
+  width: 5vw;
   cursor: pointer;
 }
 
@@ -299,6 +300,41 @@ footer > * > div:nth-child(1) {
 
 .mobileOnly {
   display: none;
+}
+
+#headerContent a {
+  pointer-events: all;
+}
+
+.col3 {
+  display: inline-block;
+  grid-column-end: span 3;
+}
+
+.newRow {
+  grid-column-start: 1;
+}
+
+.remainder > img {
+  width: 100%;
+}
+
+.start2 {
+  display: inline-block;
+  grid-column-start: 2;
+}
+
+.hidden {
+  display: none;
+}
+
+.smallerText {
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.padChildren > div {
+  padding-bottom: 32px;
 }
 
 @media screen and (max-width: 782px) {
@@ -410,8 +446,12 @@ footer > * > div:nth-child(1) {
     width: 81px;
     height: 21px;
   }
+  .smallerText {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
-#headerContent a {
-  pointer-events: all;
+.aboutPage > div {
+  padding-bottom: 16px;
 }
