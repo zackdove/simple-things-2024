@@ -1,0 +1,612 @@
+@font-face {
+  font-family: "centschbook-mono-bt-regular";
+  src: url(/zd24/simple-things-2024/assets/fonts/CenSchMo.ttf);
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  color: white;
+  font-family: "centschbook-mono-bt-regular";
+  scroll-behavior: smooth;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31.2px; /* 111.111% */
+}
+
+#headerLogos {
+  /* Cant use position: fixed here, breaks mix-blend-mode */
+  mix-blend-mode: exclusion;
+}
+#test {
+  background-color: black;
+}
+
+#landingVideo {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  pointer-events: none;
+  background-color: #fff;
+}
+
+.poster {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.poster.show {
+  display: block;
+}
+
+.headerLogo {
+  position: sticky;
+  top: 2.5vw;
+  width: 95vw;
+  left: 2.5vw;
+  margin-top: 64px;
+}
+
+#headerLogoDesktop {
+  display: none;
+  mix-blend-mode: difference;
+}
+
+#lineup {
+  color: #fff;
+  scroll-margin-top: 300px;
+  grid-column-start: 1;
+}
+
+.lineupLeft {
+  grid-column-start: 2;
+  grid-column-end: span 2;
+  margin-bottom: 80px;
+}
+
+.lineupLocation {
+  font-size: 24px;
+}
+
+.lineupSolo {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.lineupRight {
+  grid-column-end: span 2;
+  grid-column-start: 2;
+  text-align: right;
+  margin-bottom: 80px;
+}
+
+.contentIntro {
+  grid-column-start: 1;
+  grid-column-end: span 3;
+  margin-top: 10px;
+  margin-bottom: 64px;
+}
+
+.lineupTitle {
+  font-size: 24px;
+}
+
+.lineupAZ {
+  font-size: 24px;
+  margin-top: 16px;
+}
+
+.lineupTime {
+  font-size: 24px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.lineupTickets {
+  height: 100%;
+  grid-row-end: span 2;
+}
+.lineupTickets > div {
+  /* position: sticky;
+  top: 300px;
+  padding-bottom: 64px; */
+}
+* {
+  scroll-margin-top: 300px;
+}
+.w25 {
+  width: 20vw;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+#content {
+  padding: 40px 23px 80px 23px;
+}
+
+#content .ticketsBtn {
+  margin-bottom: 64px;
+  display: block;
+  width: fit-content;
+}
+
+#headerLogoMobile {
+  display: none;
+  mix-blend-mode: difference;
+}
+#headerLogoDesktop {
+  display: block;
+}
+
+.smallerLineup {
+  color: #fff;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 120% */
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.smallerInfo {
+  color: #fff;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 120% */
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.smallerFooter {
+  color: #000;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 120% */
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.spreadColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  color: #fff;
+  row-gap: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.remainder {
+  display: inline-block;
+  grid-column-end: span 2;
+}
+
+#footerVideo {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  padding: 115px 23px 75px 23px;
+  justify-content: space-between;
+  color: #000;
+  background-color: #fff;
+}
+
+footer > div:nth-child(1) {
+  width: 300px;
+}
+
+footer > div:nth-child(2) {
+  flex-grow: 0.3;
+}
+
+footer > * > div:nth-child(1) {
+  margin-bottom: 64px;
+}
+
+.largerText {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44px; /* 110% */
+}
+
+#teamLove {
+  width: 114px;
+  height: 60px;
+}
+
+#crackLogo {
+  width: 129px;
+  height: 34px;
+}
+
+.smallerFooterInner {
+  gap: 54px;
+  display: flex;
+  flex-direction: row;
+}
+
+.smallerFooterInner2 {
+  gap: 54px;
+  display: flex;
+  flex-direction: row;
+}
+
+#headerContent {
+  position: absolute;
+  bottom: 64px;
+  color: #000;
+  padding: 0 23px;
+  row-gap: 100px;
+  pointer-events: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.fixedTickets {
+  position: absolute;
+  right: 9vw;
+  bottom: 0;
+}
+
+#destopHeaderIntro {
+}
+
+#menu {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  min-height: 100vh;
+  background-color: #fff;
+  color: #000;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44px; /* 110% */
+  padding: 29px 200px 29px 20px;
+  box-sizing: border-box;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s;
+}
+#menu.show {
+  opacity: 1;
+  pointer-events: all;
+}
+
+#menuClose {
+  position: absolute;
+  top: 29px;
+  right: 20px;
+  width: 5vw;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+#menuContent {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: fit-content;
+  column-gap: 84px;
+  row-gap: 32px;
+  justify-content: space-between;
+}
+
+.smallerMenu {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 125% */
+}
+
+.menuLogoLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+  position: absolute;
+  bottom: 32px;
+  right: 32px;
+}
+
+#menuOpen {
+  position: fixed;
+  top: 29px;
+  right: 20px;
+  cursor: pointer;
+  pointer-events: all;
+  z-index: 100;
+}
+#menuOpen svg {
+  width: 5vw;
+}
+
+#mobileHeaderIntro {
+  display: none;
+}
+
+.mobileOnly {
+  display: none;
+}
+
+#headerContent a {
+  pointer-events: all;
+}
+
+.col3 {
+  display: inline-block;
+  grid-column-end: span 3;
+}
+
+.newRow {
+  grid-column-start: 1;
+}
+
+.remainder > img {
+  width: 100%;
+}
+
+.start2 {
+  display: inline-block;
+  grid-column-start: 2;
+}
+
+.hidden {
+  display: none;
+}
+
+.smallerText {
+  font-size: 15px;
+  line-height: 17px;
+}
+
+.padChildren > div {
+  padding-bottom: 32px;
+}
+
+.lineupNames {
+  grid-column-start: 2;
+  grid-column-end: span 1;
+  margin-bottom: 64px;
+}
+
+.invert {
+  mix-blend-mode: difference;
+}
+
+.lineupNamesRight {
+  grid-column-start: 3;
+  grid-column-end: span 1;
+}
+
+.lineupDate {
+  grid-column-start: 2;
+  grid-column-end: span 1;
+}
+
+hr {
+  width: 120%;
+  position: relative;
+  left: -10%;
+  height: 0;
+  grid-column-start: 1;
+  grid-column-end: span 4;
+  border: 0.5px solid white;
+}
+
+.ticketsBtn {
+  border-radius: 200px;
+  background-color: #fff;
+  color: #000;
+  padding: 6px 30px;
+}
+
+.ticketsBtn.black {
+  background-color: #000;
+  color: #fff;
+}
+
+@media screen and (max-width: 782px) {
+  .mobileOnly {
+    display: block;
+  }
+  .desktopOnly {
+    display: none;
+  }
+  body {
+    color: #fff;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31.2px; /* 111.111% */
+  }
+  #destopHeaderIntro {
+    display: none;
+  }
+  #mobileHeaderIntro {
+    display: block;
+  }
+  #headerContent {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .mobilePluses {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    justify-content: space-between;
+    margin: 32px 0;
+  }
+  #content {
+    display: block;
+  }
+
+  #moreTBA {
+    margin: 24px 0;
+  }
+  footer {
+    display: block;
+  }
+  .smallerFooter {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 36px;
+    margin-top: 64px;
+  }
+  .smallerFooterInner2 {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+  #crackLogo {
+    width: 39px;
+    height: 10px;
+  }
+  #teamLove {
+    width: 37px;
+    height: 19px;
+  }
+  .smallerLineup {
+    font-size: 14px;
+    line-height: 18px; /* 128.571% */
+  }
+  footer > * > div:nth-child(1) {
+    margin-bottom: 0;
+  }
+  #menuOpen > svg {
+    width: 34px;
+  }
+  #menuOpen {
+    top: 11px;
+    right: 11px;
+  }
+  #headerLogoMobile {
+    display: block;
+    top: 11px;
+  }
+  #headerLogoDesktop {
+    display: none;
+  }
+  #menuClose {
+    top: 15px;
+    right: 20px;
+    width: 28px;
+    height: 28px;
+  }
+  .lineup {
+    display: none;
+  }
+  hr {
+    margin: 64px 0;
+  }
+  #menu {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 111.111% */
+    padding: 15px 50px 15px 20px;
+  }
+  .smallerMenu {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+  }
+  #menuTeamLove {
+    width: 61px;
+    height: 33px;
+  }
+  #content .ticketsBtn {
+    margin-bottom: 24px;
+    display: block;
+    width: fit-content;
+  }
+  #menuCrackLogo {
+    width: 81px;
+    height: 21px;
+  }
+  .smallerText {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .lineupNames {
+    margin-bottom: 0;
+  }
+  .lineupDate {
+    margin-top: 64px;
+  }
+  .lineupTickets {
+    margin-top: 24px;
+  }
+  .lineupTickets > div {
+    padding-bottom: 24px;
+  }
+}
+
+.aboutPage > div {
+  padding-bottom: 16px;
+}
+
+/* This used to work for the parent element of button divs */
+/* But it does not work with newer browsers, the below doesn't hide the play button parent div */
+
+*::-webkit-media-controls-panel {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
+/* Old shadow dom for play button */
+
+*::-webkit-media-controls-play-button {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
+/* New shadow dom for play button */
+
+/* This one works! */
+
+*::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
+}
